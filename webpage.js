@@ -35,7 +35,7 @@ var graph2 = {
       'Yellow (585)',
       'Orange (600)',
       'Red (645)',
-      'DRed (700)',
+      'Deep Red (700)',
       'IR 1 (735)',
       'IR 2 (810)',
       'IR 3 (880)',
