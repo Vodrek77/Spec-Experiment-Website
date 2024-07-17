@@ -4,15 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+
+  <!-- Sets title of website -->
   <title>Spectrometer-Experiment</title>
   <link href="webpage.css" rel="stylesheet" type="text/css" />
+
+  <!-- Adds Plotly plugin to allow for the addition of Graphs -->
   <script src="https://cdn.plot.ly/plotly-2.32.0.min.js" charset="utf-8"></script>
 </head>
 
 <body>
+
+  <!-- Opens the JavaScript file to be used in the website -->
   <script src="webpage.js"></script>
 
-  <center><div id="graph" style="width:800px;height:500px;">
+  <!-- Makes a centered div element to hold the generated Graph -->
+  <center><div id="graph" style="width:1200px;height:800px;">
     <!-- Plotting the Results (Graph) -->
     <script>
       graph = document.getElementById('graph');
