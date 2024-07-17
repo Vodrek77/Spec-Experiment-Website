@@ -15,17 +15,63 @@
 
 <body>
 
+  <!-- Header for the website -->
+  <center><h1>Spectroscopy Experiment (YES Program) Findings</h1></center>
+
+  <!-- Subheader for the website -->
+  <center><h3>First Look at Spectrometers and Reflectance of Visible Light</h3></center>
+
+  <!-- Introductory text beneath the subheader of the website -->
+  <center><p>
+    For this experiment, we looked at how Spectroscopy can alow us to identify the color of an object based on data
+    gained from reflected light of the object. In this case, we used handheld Spectrometers with built in colored lights
+    to test the percent reflectivity of a colored folder, allowing us to identify the color of the folder without ever
+    seeing it, all based off of this reflectivity data. This is because objects, such as the folders, reflect more light
+    of their "color" seen by us as visible light. This was a pretty cool experiment, and the results will be below!
+  </p></center>
+
+  <!-- Text describing the base process and the "standard" calibration that we used -->
+  <center><p>
+    To start this experiment, we had to calibrate our instruments, in this case, the Spectrometers that we were using. 
+    To do this, we had to take into acount the "Dark Voltage", or the value that the Spectrometer returns without any 
+    of the lights being pressed and added to the mix. In our case, our Spectrometer showed a Dark Voltage of 82, which 
+    is important, as it plays into the reflectivity value of the "Standard" and "Sample" values. The calibration is the 
+    "Standard" value, and in this case, we calibrated the instrument on a white piece of paper to get the base or Standard 
+    values for the instrument.
+  </p></center>
+
+  <!-- More Information -->
+  <center><p>
+    To figure out our standard reflectivity, we used the equation (Standard Result - 82)/Standard Result. Allowing us to 
+    determine the base reflectivity on a white surface, which should, in theory, reflect equal values for each color. The 
+    results are shwon in the graph below.
+  </p></center>
+
+  <!-- Standard Reflectivity Graph -->
+  <center>
+    <div id="graph1" style = "width:1200px;height:700px;">
+      <script>
+        graph1 = document.getElementById('graph1');
+        Plotly.newPlot(graph1, graphData, graphLayout);
+      </script>
+    </div>
+  </center>
+
+  <!-- More Information on experiment for "Sample" -->
+
   <!-- Opens the JavaScript file to be used in the website -->
   <script src="webpage.js"></script>
 
   <!-- Makes a centered div element to hold the generated Graph -->
-  <center><div id="graph" style="width:1200px;height:700px;">
-    <!-- Plotting the Results (Graph) -->
-    <script>
-      graph = document.getElementById('graph');
-      Plotly.newPlot(graph, graphData, graphLayout);
-    </script>
-  </div></center>
+  <center>
+    <div id="graph2" style="width:1200px;height:700px;">
+      <!-- Plotting the Results (Graph) -->
+      <script>
+        graph2 = document.getElementById('graph2');
+        Plotly.newPlot(graph2, graphData, graphLayout);
+      </script>
+    </div>
+  </center>
   
 </body>
 
