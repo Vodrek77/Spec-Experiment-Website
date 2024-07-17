@@ -1,3 +1,32 @@
+//Standard Graph Information
+var introGraph = {
+  x: ['Blue (470)',
+     'Cyan (525)',
+     'Green (560)',
+     'Yellow (585)',
+     'Orange (600)',
+     'Red (645)',
+     'DRed (700)',
+     'IR 1 (735)',
+     'IR 2 (810)',
+     'IR 3 (880)',
+     'IR 4 (940)'],
+   y: [88.252149,
+      89.64646465,
+      89.75,
+      89.5006402,
+      89.30899609,
+      89.0227577,
+      88.90392422,
+      87.44257274,
+      88.54748603,
+      88.31908832,
+      86.21848739],
+   name: 'Standard Data',
+   marker: {color: 'rgb(0, 0, 192)'},
+   type: 'bar'
+};
+
 //First Graph Information and code (Red Folder)
 var graph1 = {
   x: ['Blue (470)',
@@ -60,8 +89,19 @@ var graph2 = {
 var graphData = [graph1, graph2];
 
 //The Layout of the graph, labeling axes, naming the graph, etc.
-var graphLayout = {
-   title: 'Spectrometer Experiment Results',
+var graphLayout1 = {
+   title: 'Spectrometer Standard Results',
+   xaxis: {
+      title: 'Wavelength (nm)',
+      tickangle: -45
+   },
+   yaxis: {
+      title: 'Reflectance (%)'
+   }
+};
+
+var graphLayout2 = {
+   title: 'Spectrometer Sample Results',
    xaxis: {
       title: 'Wavelength (nm)',
       tickangle: -45
