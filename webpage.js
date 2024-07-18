@@ -1,5 +1,5 @@
 //Standard Graph Information
-var introGraph = {
+var introGraph = [{
   x: ['Blue (470)',
      'Cyan (525)',
      'Green (560)',
@@ -25,7 +25,7 @@ var introGraph = {
    name: 'Standard Data',
    marker: {color: 'rgb(0, 0, 192)'},
    type: 'bar'
-};
+}];
 
 //First Graph Information and code (Red Folder)
 var graph1 = {
